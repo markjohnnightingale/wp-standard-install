@@ -69,6 +69,9 @@ if hash wp 2>/dev/null; then
 	then
 		URL="http://$(echo $PWD | sed 's|.*Sites/||').dev:8080"
 		echo $URL
+	else 
+		echo "Enter site URL"
+		read URL
 	fi
 	echo "Enter Site title"
     read STITLE
